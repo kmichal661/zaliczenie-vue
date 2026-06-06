@@ -572,23 +572,23 @@ const formatYoutubeEmbed = (url: string) => {
             <h3 class="text-lg font-semibold mb-2">Cast</h3>
             <div
               v-if="result.movie.cast && result.movie.cast.length"
-              class="grid grid-cols-2 md:grid-cols-4 gap-4"
+              class="grid grid-cols-2 md:grid-cols-4 gap-2"
             >
               <div
                 v-for="c in result.movie.cast"
                 :key="c.castId"
-                class="flex flex-col items-start p-3 border rounded"
+                class="flex flex-col items-start p-1 border rounded w-32"
               >
                 <img
                   v-if="c.actor?.photoUrl"
                   :src="c.actor.photoUrl"
                   alt="actor"
-                  class="w-full h-48 object-cover rounded-md mb-3"
+                  class="w-32 h-48 object-cover rounded-md mb-2"
                 />
-                <div class="font-medium text-left w-full">
+                <div class="font-medium text-left text-sm break-words">
                   {{ c.actor?.firstName }} {{ c.actor?.lastName }}
                 </div>
-                <div class="text-sm text-muted-foreground text-left w-full">
+                <div class="text-xs text-muted-foreground text-left">
                   {{ c.roleName }}
                 </div>
               </div>

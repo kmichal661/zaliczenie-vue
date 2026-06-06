@@ -6,6 +6,7 @@ import ActorsPage from "@/pages/ActorsPage.vue";
 import FavoriteMoviesPage from "@/pages/FavoriteMoviesPage.vue";
 import VodPlatformsPage from "@/pages/VodPlatformsPage.vue";
 import WatchlistPage from "@/pages/WatchlistPage.vue";
+import RegisterPage from "@/pages/RegisterPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -17,6 +18,10 @@ const router = createRouter({
     {
       path: "/",
       component: HomePage,
+    },
+    {
+      path: "/register",
+      component: RegisterPage,
     },
     {
       path: "/actors",

@@ -75,6 +75,15 @@ const handleLogin = async () => {
           {{ loading ? "Logging in..." : "Login" }}
         </Button>
 
+        <p class="text-sm text-center">
+          Don't have an account?
+          <a
+            class="text-blue-600 underline cursor-pointer"
+            @click.prevent="router.push('/register')"
+            >Create one</a
+          >
+        </p>
+
         <p v-if="error" class="text-red-500 text-sm">Invalid credentials</p>
       </CardContent>
     </Card>
