@@ -102,7 +102,7 @@ const createMovie = async () => {
 
     <DialogContent class="max-w-xl">
       <DialogHeader>
-        <DialogTitle> Create New Moviedddddddddd </DialogTitle>
+        <DialogTitle> Create New Movie </DialogTitle>
       </DialogHeader>
 
       <div class="space-y-4">

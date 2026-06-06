@@ -365,7 +365,7 @@ const submitNewReview = async () => {
   try {
     await submitReview({
       input: {
-        movieId,
+        movieId: currentMovieId.value,
         userId,
         rating: newReviewRating.value,
         content: newReviewContent.value,
@@ -628,7 +628,7 @@ const formatYoutubeEmbed = (url: string) => {
                     {{
                       p.name
                         .split(" ")
-                        .map((s) => s[0])
+                        .map((s: any) => s[0])
                         .join("")
                         .slice(0, 2)
                     }}
